@@ -4,7 +4,7 @@
 public class SudokuCreator {
 
 	public static void main(String[] args) {
-		int lowerBound = Integer.parseInt(args[0]);
+		int lowerBound = Integer.parseInt(args[0]);	// no lower than 18
 		int upperBound = Integer.parseInt(args[1]);
 		create(lowerBound, upperBound);
 	}
@@ -47,11 +47,7 @@ public class SudokuCreator {
 						System.out.println("Numbers: " + (81 - g.getZeros()));
 						finished = true;
 					} else {
-<<<<<<< HEAD
 						create(lowerBound, upperBound);
-=======
-						create();
->>>>>>> 7982a231a3e3acc271875389defb03cb8409ea14
 						return;
 					}
 				}
@@ -79,11 +75,7 @@ public class SudokuCreator {
 				if (attempts > 100000) {
 					System.out.println("");
 					System.out.println("Timeout... too many attempts");
-<<<<<<< HEAD
 					create(lowerBound, upperBound);
-=======
-					create();
->>>>>>> 7982a231a3e3acc271875389defb03cb8409ea14
 					return;
 				}
 			} else {
@@ -101,11 +93,7 @@ public class SudokuCreator {
 				n[g.getZeros()]++;
 				if (validSolutions > 1) {
 					System.out.println("Too many solutions, restarting..");
-<<<<<<< HEAD
 					create(lowerBound, upperBound);
-=======
-					create();
->>>>>>> 7982a231a3e3acc271875389defb03cb8409ea14
 					return;
 				} else {
 					System.out.print("Looking for solutions");
