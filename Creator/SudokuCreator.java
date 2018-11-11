@@ -4,7 +4,7 @@
 public class SudokuCreator {
 
 	public static void main(String[] args) {
-		int lowerBound = Integer.parseInt(args[0]);	// no lower than 18
+		int lowerBound = Integer.parseInt(args[0]);	// no lower than 17. 19 is good
 		int upperBound = Integer.parseInt(args[1]);
 		create(lowerBound, upperBound);
 	}
